@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'bank_details.banks.apps.BanksConfig',
-    'bank_details.user.apps.UserConfig',
+    'banks.apps.BanksConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
