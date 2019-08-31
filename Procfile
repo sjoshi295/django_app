@@ -1,1 +1,1 @@
-web: gunicorn bank_details.wsgi --log-file -
+web: sh -c 'cd ./bank_details/ && exec gunicorn bank_details.wsgi --log-file -'
