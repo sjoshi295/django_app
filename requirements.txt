@@ -10,6 +10,7 @@ django-cors-headers==3.1.0
 django-filter==2.2.0
 djangorestframework==3.10.2
 djangorestframework-simplejwt==4.3.0
+django-heroku==0.3.1
 entrypoints==0.3
 fastparquet==0.3.2
 idna==2.7
