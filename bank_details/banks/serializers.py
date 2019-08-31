@@ -17,12 +17,4 @@ class BankBranchSerializer(serializers.ModelSerializer):
         model = BankData
         fields = '__all__'
         depth = 2
-
-
-class UserSeralizer(serializers.ModelSerializer):
-    
-    class Meta:
-        model = User
-        fields = ['id', 'username']
-            
         
