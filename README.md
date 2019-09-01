@@ -62,7 +62,7 @@ Also, included the views, provided by the package, in root urls.py - TokenObtain
 
 ```
 > b. Fetch bank branch given branch IFSC code
->> The api which makes it work  - /api/banks/<ifsc>/
+>> The api which makes it work  - /api/banks/ifsc/
 ```
   #curl
   curl -X GET \
@@ -70,7 +70,7 @@ Also, included the views, provided by the package, in root urls.py - TokenObtain
   -H 'authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3ODAxNDQ0LCJqdGkiOiI1NDlmOTRjMDNhOTc0Njg5OTcyMGNiZTllZjM1NTQ1YSIsInVzZXJfaWQiOjN9.OLOgcRGOtK035u1liVyqC-gRDthy5MEwNzeSWiDe-mA'
 ```
 > c. Fetch bank branches given bank name and city name
->> Api mentioned in the project - /api/<bank_name>/<city>/
+>> Api mentioned in the project - /api/banks/bank_name/city/
 ```
   curl -X GET \
   https://pacific-scrubland-56756.herokuapp.com/api/banks/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED/MUMBAI/ \
