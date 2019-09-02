@@ -76,7 +76,7 @@ c. Fetch bank branches given bank name and city name
   https://pacific-scrubland-56756.herokuapp.com/api/banks/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED/MUMBAI/ \
   -H 'authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3ODAxNDQ0LCJqdGkiOiI1NDlmOTRjMDNhOTc0Njg5OTcyMGNiZTllZjM1NTQ1YSIsInVzZXJfaWQiOjN9.OLOgcRGOtK035u1liVyqC-gRDthy5MEwNzeSWiDe-mA'
 ```
-With limit and offset
+>With limit and offset
 ```
   curl -X GET \
   'https://pacific-scrubland-56756.herokuapp.com/api/banks/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED/MUMBAI/?limit=2&offset=5' \
