@@ -32,7 +32,7 @@ Also, included the views, provided by the package, in root urls.py - TokenObtain
 ]
 ```
 ##### 4. Steps to reproduce APIs
-> a. Create user and token!
+a. Create user and token!
 ```
   # Let's ask Tom Hanks to join
   curl -X POST \
@@ -44,7 +44,7 @@ Also, included the views, provided by the package, in root urls.py - TokenObtain
 	"password": "abcd1234"
 }'
 ```
->> Let's create a token for him
+>Let's create a token for him
 ```
   curl -X POST \
   https://pacific-scrubland-56756.herokuapp.com/api/login/ \
@@ -61,16 +61,16 @@ Also, included the views, provided by the package, in root urls.py - TokenObtain
 }
 
 ```
-> b. Fetch bank branch given branch IFSC code
->> The api which makes it work  - /api/banks/ifsc/
+b. Fetch bank branch given branch IFSC code
+>The api which makes it work  - /api/banks/ifsc/
 ```
   #curl
   curl -X GET \
   https://pacific-scrubland-56756.herokuapp.com/api/banks/ALLA0210513/ \
   -H 'authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3ODAxNDQ0LCJqdGkiOiI1NDlmOTRjMDNhOTc0Njg5OTcyMGNiZTllZjM1NTQ1YSIsInVzZXJfaWQiOjN9.OLOgcRGOtK035u1liVyqC-gRDthy5MEwNzeSWiDe-mA'
 ```
-> c. Fetch bank branches given bank name and city name
->> Api mentioned in the project - /api/banks/bank_name/city/
+c. Fetch bank branches given bank name and city name
+>Api mentioned in the project - /api/banks/bank_name/city/
 ```
   curl -X GET \
   https://pacific-scrubland-56756.herokuapp.com/api/banks/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED/MUMBAI/ \
