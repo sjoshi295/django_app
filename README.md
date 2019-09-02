@@ -40,7 +40,7 @@ Also, included the views, provided by the package, in root urls.py - TokenObtain
   -H 'content-type: application/json' \
   -d '{
 	"username": "Tom_Hanks",
-  "email": "tom@example.com"
+  	"email": "tom@example.com",
 	"password": "abcd1234"
 }'
 ```
