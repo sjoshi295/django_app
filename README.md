@@ -66,20 +66,21 @@ b. Fetch bank branch given branch IFSC code
 ```
   #curl
   curl -X GET \
-  https://pacific-scrubland-56756.herokuapp.com/api/banks/ALLA0210513/ \
+  https://pacific-scrubland-56756.herokuapp.com/api/banks/?ifsc=ALLA0210513 \
   -H 'authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3ODAxNDQ0LCJqdGkiOiI1NDlmOTRjMDNhOTc0Njg5OTcyMGNiZTllZjM1NTQ1YSIsInVzZXJfaWQiOjN9.OLOgcRGOtK035u1liVyqC-gRDthy5MEwNzeSWiDe-mA'
 ```
 c. Fetch bank branches given bank name and city name
 >Api mentioned in the project - /api/banks/bank_name/city/
 ```
   curl -X GET \
-  https://pacific-scrubland-56756.herokuapp.com/api/banks/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED/MUMBAI/ \
+  https://pacific-scrubland-56756.herokuapp.com/api/banks/?bank=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&city=MUMBAI \
   -H 'authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3ODAxNDQ0LCJqdGkiOiI1NDlmOTRjMDNhOTc0Njg5OTcyMGNiZTllZjM1NTQ1YSIsInVzZXJfaWQiOjN9.OLOgcRGOtK035u1liVyqC-gRDthy5MEwNzeSWiDe-mA'
 ```
 >With limit and offset
 ```
   curl -X GET \
-  'https://pacific-scrubland-56756.herokuapp.com/api/banks/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED/MUMBAI/?limit=2&offset=5' \
+  'https://pacific-scrubland-56756.herokuapp.com/api/banks/? \
+   bank=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&city=MUMBAI&limit=2&offset=5' \
   -H 'authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY3ODAxNDQ0LCJqdGkiOiI1NDlmOTRjMDNhOTc0Njg5OTcyMGNiZTllZjM1NTQ1YSIsInVzZXJfaWQiOjN9.OLOgcRGOtK035u1liVyqC-gRDthy5MEwNzeSWiDe-mA'
 ```
 
